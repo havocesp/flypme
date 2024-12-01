@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""flipme
-
-File: flipme/cli.py
-Author: Havocesp <https://github.com/havocesp/flipme>
-Created: 2022-05-24
-"""
+"""flipme: flyp.me coin swap API wrapper."""
 import sys
 from argparse import ArgumentParser
 from pprint import pprint
 
-from flipme import Flypme
+from flipme.core import Flypme
 
 
 def cmd_create(args):
@@ -19,8 +14,8 @@ def cmd_create(args):
 
 
 if __name__ == '__main__':
-    sys.argv.extend(['new', '-f', 'ETH', '-t', 'XMR'])
-    ap = ArgumentParser()
+    # sys.argv.extend(['new', '-f', 'ETH', '-t', 'XMR'])
+    ap = ArgumentParser(description=__doc__)
 
     sbp = ap.add_subparsers(help='Sub commands')
 

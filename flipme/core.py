@@ -11,7 +11,7 @@ from typing import Dict
 
 import requests
 
-from utils import _clean_params
+from flipme.utils import _clean_params
 
 
 class Flypme:
